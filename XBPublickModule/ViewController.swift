@@ -8,10 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AccountModuleRoute {
+    
+    var accountId: String? {
+        return "123"
+    }
+    
+    func showLoginVC() {
+        
+    }
+    
+    func showRetrievePasswordVC() {
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        debugPrint(self.imagedemo)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

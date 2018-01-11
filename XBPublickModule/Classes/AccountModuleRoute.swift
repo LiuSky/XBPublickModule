@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 public let kAccountRoute = "AccountModuleRoute"   // or s(AccountLotus.self) 减少硬编码，使编译可以检测出 error
 
 /// MARK - 用户模块路由协议
-public protocol AccountModuleRoute  {
+public protocol AccountModuleRoute {
 
     /// 用户Id
     var accountId: String? { get }
@@ -21,4 +22,15 @@ public protocol AccountModuleRoute  {
     
     /// 找回密码
     func showRetrievePasswordVC()
+}
+
+extension AccountModuleRoute {
+    
+    
+    var imagedemo: UIImage {
+        
+        let bundle = Bundle.main
+        return UIImage(named: "Logo", in: bundle, compatibleWith: nil)!
+    }
+    
 }
