@@ -23,14 +23,3 @@ public protocol AccountModuleRoute {
     /// 找回密码
     func showRetrievePasswordVC()
 }
-
-extension AccountModuleRoute {
-    
-    
-    var imagedemo: UIImage {
-        
-        let bundle = Bundle.main
-        return UIImage(named: "Logo", in: bundle, compatibleWith: nil)!
-    }
-    
-}
